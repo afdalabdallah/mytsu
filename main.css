@@ -1,0 +1,13 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  padding: 0 7.5rem;
+}
+
+.selected {
+  color: #2d85c5;
+}
+
+label {
+  font-weight: bold;
+}

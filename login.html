@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex py-[7.5rem]">
+      <div>
+        <!-- Logo Component -->
+        <div class="flex items-center pt-[3px] pb-[3px] gap-[7px]">
+          <img src="./assets/icon/wpf_books.png" />
+          <h1 class="font-black text-[30px]">MyTSU Classroom</h1>
+        </div>
+        <!-- Login Register Comp -->
+        <div
+          class="flex font-black gap-[10px] text-[#C3C3C3] text-[26px] leading-[24px]"
+        >
+          <div class="selected">Log in</div>
+          <div class="border border-black rounded p-[2px] bg-black"></div>
+          <div class="">Register</div>
+        </div>
+
+        <!-- Input Container -->
+        <div>
+          <form>
+            <!-- Input Component -->
+            <div>
+              <label> Email </label>
+              <br />
+              <input type="text" required placeholder="Email" />
+            </div>
+            <div>
+              <label> Password </label>
+              <br />
+              <input type="password" required placeholder="Password" />
+            </div>
+            <a>Forgot password?</a>
+            <div>
+              <button>Log in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="onboard-img-cont">
+        <img src="./assets/img/onboard.png" />
+      </div>
+    </div>
+  </body>
+</html>
