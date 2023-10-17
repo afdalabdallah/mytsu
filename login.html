@@ -14,46 +14,73 @@
     />
   </head>
   <body>
-    <div class="flex py-[7.5rem]">
-      <div>
-        <!-- Logo Component -->
-        <div class="flex items-center pt-[3px] pb-[3px] gap-[7px]">
-          <img src="./assets/icon/wpf_books.png" />
-          <h1 class="font-black text-[30px]">MyTSU Classroom</h1>
-        </div>
-        <!-- Login Register Comp -->
-        <div
-          class="flex font-black gap-[10px] text-[#C3C3C3] text-[26px] leading-[24px]"
-        >
-          <div class="selected">Log in</div>
-          <div class="border border-black rounded p-[2px] bg-black"></div>
-          <div class="">Register</div>
-        </div>
+    <main>
+      <div
+        class="flex py-[7.5rem] 2xl:px-[7rem] justify-center lg:justify-between"
+      >
+        <div class="lg:w-[40%] w-100">
+          <!-- Logo Component -->
+          <div
+            class="flex items-center pt-[3px] pb-[3px] gap-[7px] justify-center"
+          >
+            <img src="./assets/icon/wpf_books.png" />
+            <h1 class="font-black sm:text-[26px] lg:text-[30px]">
+              MyTSU Classroom
+            </h1>
+          </div>
+          <!-- Login Register Comp -->
+          <div
+            class="flex font-black gap-[24px] text-[#C3C3C3] sm:text-[26px] leading-[24px] my-10 justify-center"
+          >
+            <div class="selected"><a href="./login.html">Log in</a></div>
+            <div class="border border-black rounded p-[2px] bg-black"></div>
+            <div class=""><a href="./register.html">Register</a></div>
+          </div>
 
-        <!-- Input Container -->
-        <div>
-          <form>
-            <!-- Input Component -->
-            <div>
-              <label> Email </label>
-              <br />
-              <input type="text" required placeholder="Email" />
-            </div>
-            <div>
-              <label> Password </label>
-              <br />
-              <input type="password" required placeholder="Password" />
-            </div>
-            <a>Forgot password?</a>
-            <div>
-              <button>Log in</button>
-            </div>
-          </form>
+          <!-- Input Container -->
+          <div>
+            <form method="post" action="" id="loginForm">
+              <!-- Input Component -->
+              <div>
+                <label> Email </label>
+                <br />
+                <input
+                  class="onboard-input focus:outline-[#2d85c5]"
+                  type="email"
+                  required
+                  placeholder="Email"
+                  name="email"
+                />
+              </div>
+              <div class="my-10">
+                <label> Password </label>
+                <br />
+                <input
+                  class="onboard-input focus:outline-[#2d85c5]"
+                  type="password"
+                  required
+                  placeholder="Password"
+                  name="password"
+                />
+                <div class="text-right mt-[0.5em]">
+                  <a class="text-end" href="/forgot_pass.html"
+                    >Forgot password?</a
+                  >
+                </div>
+              </div>
+
+              <button type="submit" class="login-btn sm:py-[16px] py-[10px]">
+                Log in
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="onboard-img-cont w-[50%] hidden lg:flex items-center justify-center"
+        >
+          <img src="./assets/img/onboard.png" />
         </div>
       </div>
-      <div class="onboard-img-cont">
-        <img src="./assets/img/onboard.png" />
-      </div>
-    </div>
+    </main>
   </body>
 </html>
