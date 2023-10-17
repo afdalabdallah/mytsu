@@ -134,3 +134,22 @@ a:hover {
   background-color: #df3232 !important;
   color: white !important;
 }
+
+#profileModal {
+  background-color: white;
+  border-radius: 5px;
+
+  left: -5em;
+  font-size: 16px;
+  box-shadow: 4px 4px 4px #9f9f9f;
+}
+
+.profile-link {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.profile-link:hover {
+  background-color: #2d85c5;
+  color: white !important;
+}

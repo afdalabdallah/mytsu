@@ -51,8 +51,32 @@
           <div class="flex items-center text-[18px] font-bold gap-[30px]">
             <a href="./admin.html">Home</a>
             <a href="./admin.html">Administration</a>
-            <div>
-              <img src="./assets/img/profile.png" width="48px" />
+            <div class="relative">
+              <button onclick="showProfile()">
+                <img src="./assets/img/profile.png" width="48px" />
+              </button>
+              <div id="profileModal" class="absolute profile-modal" hidden>
+                <a
+                  href="./profile.html"
+                  class="flex gap-[6px] items-center mb-2 profile-link"
+                >
+                  <img
+                    src="./assets/icon/icon_profile.png"
+                    style="width: 16px; height: 16px"
+                  />
+                  <span>Profile</span>
+                </a>
+                <a
+                  href="./login.html"
+                  class="flex gap-[6px] items-center profile-link"
+                >
+                  <img
+                    src="./assets/icon/half-circle.png"
+                    style="width: 16px; height: 16px"
+                  />
+                  <span>Log out</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -156,4 +180,5 @@
     </main>
   </body>
   <script src="./assets/js/faculties.js"></script>
+  <script src="./assets/js/utils.js"></script>
 </html>
