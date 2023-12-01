@@ -153,3 +153,16 @@ a:hover {
   background-color: #2d85c5;
   color: white !important;
 }
+
+.student-active {
+  border-bottom: 4px solid #2d85c5;
+  color: black !important;
+}
+
+.season-text {
+  color: #cad4de;
+}
+
+.season-text:hover {
+  cursor: pointer;
+}
