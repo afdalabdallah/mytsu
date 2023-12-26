@@ -32,6 +32,10 @@ label {
   font-weight: bold;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .onboard-input {
   border-radius: 10px;
   padding: 10px;
@@ -152,4 +156,17 @@ a:hover {
 .profile-link:hover {
   background-color: #2d85c5;
   color: white !important;
+}
+
+.save-change:hover {
+  background-color: #2d85c5;
+}
+
+.cancel-change:hover {
+  background-color: red;
+  color: white;
+}
+
+.labelImage:hover {
+  cursor: pointer;
 }
